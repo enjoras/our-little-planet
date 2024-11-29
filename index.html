@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小光与小鱼的小星球</title>
     <style>
-        /* 定义整个网页的背景 */
         body {
             font-family: Arial, sans-serif;
             background-image: url('https://raw.githubusercontent.com/enjoras/our-little-planet/refs/heads/main/bg.png');
-            background-size: cover; /* 背景图片铺满页面 */
-            background-attachment: fixed; /* 背景固定不动 */
-            text-align: center; /* 文字居中 */
-            padding: 20px; /* 页面边距 */
-            color: #ffffff; /* 白色字体 */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 添加文字阴影 */
         }
-        /* 定义标题样式 */
         h1 {
-            color: #ffcc00; /* 标题颜色：金色 */
-            font-size: 36px; /* 字体大小 */
+            color: #ffcc00; /* 金色字体 */
+            font-size: 48px; /* 标题更大 */
+            margin-bottom: 20px; /* 下方留出一点空隙 */
         }
-        /* 定义段落样式 */
         p {
-            font-size: 18px; /* 字体大小 */
+            font-size: 20px;
+            margin: 10px 0; /* 上下留出空隙 */
         }
-        /* 定义链接样式 */
         a {
-            color: #1e90ff; /* 链接颜色：蓝色 */
-            text-decoration: none; /* 去掉下划线 */
-            margin: 0 10px; /* 添加左右间距 */
+            display: inline-block; /* 链接独占一块 */
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            padding: 10px 20px; /* 增加内边距 */
+            border: 2px solid #1e90ff; /* 添加蓝色边框 */
+            border-radius: 25px; /* 边框圆角 */
+            background-color: rgba(30, 144, 255, 0.2); /* 半透明背景 */
+            transition: all 0.3s ease; /* 动画效果 */
         }
         a:hover {
-            text-decoration: underline; /* 鼠标悬停时添加下划线 */
+            background-color: #1e90ff; /* 鼠标悬停变为纯蓝色 */
+            color: #ffffff; /* 字体变为白色 */
+            text-decoration: none;
         }
     </style>
 </head>
@@ -44,5 +56,6 @@
     <a href="stories.html">查看我们的故事</a>
 </body>
 </html>
+
 
 
